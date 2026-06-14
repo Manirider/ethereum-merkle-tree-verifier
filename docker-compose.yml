@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    environment:
+      - ETH_RPC_URL=${ETH_RPC_URL:-https://ethereum.publicnode.com}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    command: pytest -v
+
+  demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ETH_RPC_URL=${ETH_RPC_URL:-https://ethereum.publicnode.com}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    # Change command to run specific parts, e.g., python scripts/part3_verify.py
+    command: python scripts/part3_verify.py
