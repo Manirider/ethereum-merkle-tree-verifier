@@ -1,0 +1,8 @@
+Repository: ethereum-merkle-tree-verifier
+Description: Production-grade Python implementation of Merkle Trees for Ethereum transaction verification with inclusion proofs, Docker support, CI/CD, and unit testing.
+Topics: portfolio-project
+
+GitHub Settings Updates:
+1. Go to https://github.com/Manirider/ethereum-merkle-tree-verifier/settings
+2. Update the Description field to: Production-grade Python implementation of Merkle Trees for Ethereum transaction verification with inclusion proofs, Docker support, CI/CD, and unit testing.
+3. Add the following tags under Topics: portfolio-project
